@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus projetos</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f4f6;
+        color: #111827;
+      }
+
+      .container {
+        width: min(1000px, 92%);
+        margin: 40px auto;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        text-align: center;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .card {
+        display: block;
+        flex: 1 1 220px;
+        max-width: 320px;
+        text-decoration: none;
+        color: inherit;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      .card p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meus projetos</h1>
+
+      <div class="cards">
+        <a
+          class="card"
+          href="../../semana_01/exercicios/exemplos_html.html"
+          target="_blank"
+        >
+          <h2>Exemplos básicos HTML</h2>
+          <p>Página com estrutura e elementos HTML essenciais.</p>
+        </a>
+
+        <a class="card" href="flexbox.html" target="_blank">
+          <h2>Exemplos de Flexbox</h2>
+          <p>Layouts com alinhamento e distribuição usando Flexbox.</p>
+        </a>
+
+        <a class="card" href="formulario.html" target="_blank">
+          <h2>Exemplos de Formulário</h2>
+          <p>Campos, entrada de dados e envio de formulários.</p>
+        </a>
+
+        <a class="card" href="camera.html" target="_blank">
+          <h2>Câmera</h2>
+          <p>Exemplo de acesso à câmera no navegador.</p>
+        </a>
+
+        <a class="card" href="ifood.html" target="_blank">
+          <h2>Ifood</h2>
+          <p>Exercício com interface inspirada em app de delivery.</p>
+        </a>
+
+        <a class="card" href="imc.html" target="_blank">
+          <h2>IMC</h2>
+          <p>Exercício simulador de imc</p>
+        </a>
+
+        <a
+          class="card"
+          href="../../semana_01/exercicios/tabelanutricional.html"
+          target="_blank"
+        >
+          <h2>Receita</h2>
+          <p>Exercício pagina de receita</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
