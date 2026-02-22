@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+    <script src="./script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #e1e9f0;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      .container_principal {
+        background-color: #fff;
+        width: 40%;
+        margin: 40px auto;
+        border-radius: 4px;
+
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px,
+          rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding: 20px;
+      }
+
+      .titulo {
+        font-size: 32px;
+        color: #3e3e3e;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .descricao {
+        font-size: 18px;
+        color: #3e3e3e;
+      }
+
+      .label_input {
+        font-size: 16px;
+        font-weight: bold;
+
+        color: #3e3e3e;
+      }
+
+      .input {
+        margin-top: 10px;
+        width: 100%;
+        height: 34px;
+        border: 1px #e1e9f0 solid;
+        border-radius: 4px;
+        padding-left: 10px;
+        box-sizing: border-box;
+
+        font-size: 18px;
+        color: #3e3e3e;
+      }
+
+      .input:focus {
+        outline: none;
+        border-width: 2px;
+        border-color: #ccd9e4;
+      }
+
+      .container_botoes {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .botao_calcular {
+        width: 75%;
+        height: 34px;
+        background-color: #0d9987;
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 10px;
+        border: none;
+      }
+
+      .botao_reset {
+        width: 23%;
+        height: 34px;
+        background-color: #0d9987;
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 10px;
+        border: none;
+      }
+
+      .resultado {
+        display: none;
+        background-color: #eff6ff;
+        height: 100px;
+        border-radius: 8px;
+        padding: 10px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_principal" id="container_principal">
+      <h1 class="titulo">Calculadora de IMC</h1>
+      <p class="descricao">Descubra seu Índice de Massa Corporal</p>
+
+      <label class="label_input" for="altura">Altura</label>
+      <input
+        class="input"
+        type="number"
+        id="altura"
+        placeholder="Digite sua altura"
+      />
+
+      <label class="label_input" for="peso">Peso</label>
+      <input
+        class="input"
+        type="number"
+        id="peso"
+        placeholder="Digite seu Peso"
+      />
+
+      <div class="container_botoes">
+        <button class="botao_calcular" onclick="calcular()">Calcular</button>
+        <button class="botao_reset" onclick="resetForm()">
+          <i class="fa-solid fa-rotate"></i>
+        </button>
+      </div>
+
+      <div class="resultado" id="resultado">
+        <p>Seu IMC é</p>
+        <p id="resultado_imc"></p>
+        <p id="resultado_descricao"></p>
+      </div>
+    </div>
+  </body>
+</html>

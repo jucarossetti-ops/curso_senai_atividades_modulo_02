@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha receita</title>
+
+    <style>
+      body {
+        background-color: #e1ebeb;
+      }
+
+      .container_pagina {
+        background-color: #fff;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .container_nome_receita {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nome_receita {
+        margin-left: 20px;
+        font-size: 28px;
+      }
+
+      .container_imagem_receita {
+        display: flex;
+        justify-content: center;
+      }
+
+      .imagem_receita {
+        border: 10px rgb(226, 219, 219) solid;
+        border-radius: 10px;
+      }
+
+      .secao_pagina {
+        font-size: 22px;
+        font-weight: bold;
+        color: #246b9b;
+
+        border-left: 2px #246b9b solid;
+        padding: 5px;
+      }
+
+      .tabela_nutricional {
+        width: 50%;
+        border-collapse: collapse;
+      }
+
+      .tabela_nutricional thead {
+        background-color: #246b9b;
+        color: #fff;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .tabela_nutricional tbody {
+        font-size: 17px;
+        background-color: beige;
+      }
+
+      .tabela_nutricional tr:hover {
+        background-color: rgb(187, 187, 177);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_pagina">
+      <div class="container_nome_receita">
+        <img
+          src="../assets/figurinha_macarrao.png.png"
+          width="30px"
+          height="30px"
+          alt="Macarrão"
+        />
+        <h1 class="nome_receita">Pasta Al Pene</h1>
+      </div>
+
+      <div class="container_imagem_receita">
+        <img
+          src="../assets/macarrao.jpg"
+          width="350px"
+          alt="Imagem de Macarrão"
+          class="imagem_receita"
+        />
+      </div>
+
+      <h2 class="secao_pagina">Descrição do prato</h2>
+      <p>
+        A Pasta Al Pene é um prato de massa estilo penne, preparado com molho de
+        tomate rústico, manjericão fresco, alho levemente dourado e um toque de
+        azeite extra-virgem. Finalizada com queijo parmesão ralado e pimenta do
+        reino moída na hora, tem textura cremosa e sabor equilibrado — ótima
+        opção para almoços e jantares descontraídos.
+      </p>
+
+      <h2 class="secao_pagina">Informacoes Nutricionais (por porcao)</h2>
+
+      <table border="1" class="tabela_nutricional">
+        <thead>
+          <tr>
+            <th>Nutriente</th>
+            <th>Quantidade</th>
+            <th>% VD*</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Calorias</td>
+            <td>680 kcal</td>
+            <td>34%</td>
+          </tr>
+          <tr>
+            <td>Proteína</td>
+            <td>18 g</td>
+            <td>36%</td>
+          </tr>
+          <tr>
+            <td>Carboidratos</td>
+            <td>85 g</td>
+            <td>28%</td>
+          </tr>
+          <tr>
+            <td>Gordura Total</td>
+            <td>22 g</td>
+            <td>34%</td>
+          </tr>
+          <tr>
+            <td>Fibra Alimentar</td>
+            <td>6 g</td>
+            <td>24%</td>
+          </tr>
+          <tr>
+            <td>Colesterol</td>
+            <td>55 mg</td>
+            <td>18%</td>
+          </tr>
+          <tr>
+            <td>Sódio</td>
+            <td>620 mg</td>
+            <td>26%</td>
+          </tr>
+          <tr>
+            <td>Açúcar</td>
+            <td>6 g</td>
+            <td>12%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        *VD = Valor Diário | Baseado em uma dieta de 2.000 calorias diárias |
+        Valores aproximados
+      </p>
+    </div>
+  </body>
+</html>

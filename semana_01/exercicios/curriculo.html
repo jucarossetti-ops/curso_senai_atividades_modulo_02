@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu curriculo</title>
+
+    <style>
+      body {
+        background-color: #e1ebeb;
+      }
+
+      .container_pagina {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .nome_pessoa {
+        color: #246b9b;
+        font-size: 34px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin: 5px;
+        /* margin-left: 50px;  Aplica margem na esquerda do elemento */
+      }
+
+      .nome_profissao {
+        color: #464444;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .container_informacao_contato {
+        display: flex;
+        /* justify-content: space-between; */
+      }
+
+      .informacao_contato {
+        color: #3498db;
+        font-size: 16px;
+        margin: 10px;
+      }
+
+      .link_contato {
+        text-decoration: nome;
+        color: #60afe3;
+      }
+
+      .secao_curriculo {
+        font-size: 28px;
+        color: #3498db;
+        font-weight: bold;
+
+        border-left: 5px #3498db solid;
+        padding: 5px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .descricao_resumo_profissional {
+        font-size: 18px;
+        text-align: justify;
+        color: #464444;
+        margin-bottom: 20px;
+      }
+
+      .cargo_experiencia {
+        font-size: 16px;
+        color: #464444;
+        margin: 0;
+      }
+
+      .empresa_experiencia {
+        font-size: 16px;
+        color: #3498db;
+        margin: 0;
+      }
+
+      .periodo_experiencia {
+        font-size: 15px;
+        color: #a49e9e;
+        margin: 0;
+      }
+
+      .lista_experiencia {
+        font-size: 14px;
+        color: #464444;
+      }
+
+      .separador {
+        border: 0.5px #3498db solid;
+      }
+
+      /*
+      .secao_experiencia {
+        color: purple !important;
+        border-top: 5px #3498db solid !important;
+      }
+      */
+      @media (max-width: 800px) {
+        .container_informacao_contato {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (min-width: 600px) {
+        body {
+          background-color: #000;
+        }
+
+        .separador {
+          border-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_pagina">
+      <h1 class="nome_pessoa">Maria Silva Santos Costa</h1>
+      <p class="nome_profissao">Desenvolvedor FullStack</p>
+
+      <div class="container_informacao_contato">
+        <p class="informacao_contato">
+          Email:
+          <a class="link_contato" href="mailto:maria.silva@email.com"
+            >maria.silva@email.com</a
+          >
+        </p>
+
+        <p class="informacao_contato">
+          Telefone:
+          <a class="link_contato" href="tel:5511987654321">(11) 98765-4321</a>
+        </p>
+      </div>
+
+      <div class="container_informacao_contato">
+        <p class="informacao_contato">
+          LinkedIn:
+          <a
+            class="link_contato"
+            href="linkedin.com/in/mariasilva"
+            target="_blank"
+            >linkedin.com/in/mariasilva</a
+          >
+        </p>
+        <p class="informacao_contato">
+          Github:
+          <a class="link_contato" href="github.com/maria-silva" target="_blank"
+            >maria-silva</a
+          >
+        </p>
+      </div>
+
+      <div class="separador"></div>
+
+      <h2 class="secao_curriculo">Resumo profissional</h2>
+      <p class="descricao_resumo_profissional">
+        Desenvolvedora Full Stack com mais de 6 anos de experiência em
+        desenvolvimento de aplicações web escaláveis e responsivas. Especialista
+        em JavaScript, React, Node.js e bancos de dados relacionais e não
+        relacionais. Experiência comprovada em liderança técnica, arquitetura de
+        software e metodologias ágeis. Apaixonada por código limpo, boas
+        práticas e por compartilhar conhecimento com a equipe.
+      </p>
+
+      <div class="separador"></div>
+
+      <h2 class="secao_curriculo">Experiência Profissional</h2>
+
+      <h3 class="cargo_experiencia">Desenvolvedora Full Stack Sênior</h3>
+      <p class="empresa_experiencia">Inovação Digital S.A. - São Paulo - SP</p>
+      <p class="periodo_experiencia">Janeiro 2022 - Presente</p>
+      <ul class="lista_experiencia">
+        <li>Desenvolvimento de aplicações web usando React e Node.js</li>
+        <li>Liderança técnica de equipe de 5 desenvolvedores</li>
+        <li>Implementação de arquitetura de microsserviços</li>
+        <li>Code review e mentoria de desenvolvedores júnior</li>
+      </ul>
+
+      <h3 class="cargo_experiencia">Desenvolvedora Full Stack Pleno</h3>
+      <p class="empresa_experiencia">WebTech Sistemas - Campinas - SP</p>
+      <p class="periodo_experiencia">Março 2020 - Dezembro 2021</p>
+      <ul class="lista_experiencia">
+        <li>Desenvolvimento de APIs RESTful com Express.js</li>
+        <li>Criação de interfaces responsivas com Vue.js</li>
+        <li>Integração com bancos de dados PostgreSQL e MongoDB</li>
+      </ul>
+    </div>
+  </body>
+</html>

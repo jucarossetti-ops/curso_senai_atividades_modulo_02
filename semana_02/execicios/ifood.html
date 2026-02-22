@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ifood</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f7f7f7;
+        font-family: "Inter", sans-serif;
+      }
+
+      .container_principal {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+
+      .container_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        width: 60px;
+        object-fit: contain;
+      }
+
+      .menu {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      .menu a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #3e3e3e;
+      }
+
+      .criar_conta_link {
+        font-size: 16px;
+        color: #ea1d2c;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      .botao_entrar {
+        background-color: #ea1d2c;
+        width: 100px;
+        height: 44px;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+      }
+
+      .botao_entrar:hover {
+        cursor: pointer;
+        background-color: #e53945;
+        /* opacity: 0.8; retirar opacidade do elemento */
+        font-weight: bold;
+      }
+
+      .texto_inicial {
+        text-align: center;
+        margin-top: 80px;
+        font-weight: bold;
+        font-size: 42px;
+      }
+
+      .descricao_inicial {
+        text-align: center;
+        font-size: 22px;
+        color: #3e3e3e;
+      }
+
+      .container_cards_inicial {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card_inicial {
+        width: 40%;
+        border-radius: 8px;
+        padding: 20px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card_inicial p {
+        font-size: 42px;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+      }
+
+      .card_inicial button {
+        width: 146px;
+        height: 36px;
+        background-color: #cf2d38d2;
+        border: none;
+        color: #fff;
+        border-radius: 8px;
+      }
+
+      .bg_card_restaurante {
+        background-color: #e53945;
+      }
+
+      .bg_card_mercado {
+        background-color: #b6d048;
+      }
+
+      .container_opcoes_comidas {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+
+      .opcao_comida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_principal">
+      <div class="container_menu">
+        <img src="../assets/ifood_logo.png" class="logo" alt="Logo do Ifood" />
+        <ul class="menu">
+          <li><a href="#">Entregador</a></li>
+          <li><a href="#">Restaurante e Mercado</a></li>
+          <li><a href="#">Carreira</a></li>
+          <li><a href="#">Ifood</a></li>
+          <li><a href="#">Empresas</a></li>
+        </ul>
+        <div>
+          <a class="criar_conta_link" href="#">Criar Conta</a>
+          <button class="botao_entrar">Entrar</button>
+        </div>
+      </div>
+
+      <h1 class="texto_inicial">Tudo pra facilitar seu dia a dia</h1>
+      <p class="descricao_inicial">
+        O que você precisa está aqui. Peça e receba onde estiver.
+      </p>
+
+      <div class="container_cards_inicial">
+        <div class="card_inicial bg_card_restaurante">
+          <p>Restaurante</p>
+          <button>Ver opcoes</button>
+        </div>
+
+        <div class="card_inicial bg_card_mercado">
+          <p>Mercado</p>
+          <button>Buscar lojas</button>
+        </div>
+      </div>
+
+      <div class="container_opcoes_comidas">
+        <div class="opcao_comida">
+          <img src="../assets/drinks.avif" width="150px" />
+          <p>Bebidas</p>
+        </div>
+
+        <div class="opcao_comida">
+          <img src="../assets/pharmacy.avif" width="125px" />
+          <p>Farmacia</p>
+        </div>
+
+        <div class="opcao_comida">
+          <img src="../assets/petshop.avif" width="150px" />
+          <p>Petshop</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
