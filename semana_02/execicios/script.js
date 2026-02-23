@@ -21,7 +21,9 @@ function resetForm() {
   document.getElementById("resultado").style.display = "none";
 }
 
-function calcular() {
+function calcular(event) {
+  event.preventDefault(); //evitar em formularios a tela recarregue
+  console.log(event);
   // Entrada
 
   var altura = Number(document.getElementById("altura").value);
@@ -62,3 +64,5 @@ function calcular() {
   }
 */
 }
+
+document.getElementById("form_imc").addEventListener("submit", calcular);
