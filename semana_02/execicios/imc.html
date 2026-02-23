@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMC</title>
-    <script src="./script.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="icones.css" />
 
     <style>
       body {
@@ -114,38 +110,53 @@
     </style>
   </head>
   <body>
-    <div class="container_principal" id="container_principal">
-      <h1 class="titulo">Calculadora de IMC</h1>
-      <p class="descricao">Descubra seu Índice de Massa Corporal</p>
+    <!-- 
+      1 - Colocar um tag form com um id
+      2 - Definir o botao de submissao colocando type submit
+      3 - Definir a funcao que vai disparada no evento de submissao
+    -->
+    <form id="form_imc">
+      <div class="container_principal" id="container_principal">
+        <h1 class="titulo">Calculadora de IMC</h1>
+        <p class="descricao">Descubra seu Índice de Massa Corporal</p>
 
-      <label class="label_input" for="altura">Altura</label>
-      <input
-        class="input"
-        type="number"
-        id="altura"
-        placeholder="Digite sua altura"
-      />
+        <label class="label_input" for="altura">Altura</label>
+        <input
+          class="input"
+          type="number"
+          step="any"
+          id="altura"
+          placeholder="Digite sua altura"
+          required
+        />
 
-      <label class="label_input" for="peso">Peso</label>
-      <input
-        class="input"
-        type="number"
-        id="peso"
-        placeholder="Digite seu Peso"
-      />
+        <label class="label_input" for="peso">Peso</label>
+        <input
+          class="input"
+          type="number"
+          step="any"
+          id="peso"
+          placeholder="Digite seu Peso"
+          required
+        />
 
-      <div class="container_botoes">
-        <button class="botao_calcular" onclick="calcular()">Calcular</button>
-        <button class="botao_reset" onclick="resetForm()">
-          <i class="fa-solid fa-rotate"></i>
-        </button>
+        <div class="container_botoes">
+          <button class="botao_calcular" type="submit" id="btn_calcular">
+            Calcular
+          </button>
+          <button class="botao_reset" type="button" onclick="resetForm()">
+            <i class="material-icons icon-small">cleaning_services</i>
+          </button>
+        </div>
+
+        <div class="resultado" id="resultado">
+          <p>Seu IMC é</p>
+          <p id="resultado_imc"></p>
+          <p id="resultado_descricao"></p>
+        </div>
       </div>
+    </form>
 
-      <div class="resultado" id="resultado">
-        <p>Seu IMC é</p>
-        <p id="resultado_imc"></p>
-        <p id="resultado_descricao"></p>
-      </div>
-    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
