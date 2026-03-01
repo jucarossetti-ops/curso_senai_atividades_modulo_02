@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Estilos da pagina -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form id="form_login" class="container_login">
+      <h1 class="login_texto">Login</h1>
+
+      <input
+        type="email"
+        id="email"
+        class="input"
+        placeholder="Email"
+        required
+      />
+
+      <input
+        id="senha"
+        type="password"
+        class="input"
+        placeholder="Senha"
+        required
+      />
+
+      <div class="container_checkbox">
+        <input type="checkbox" id="exibir_senha" onclick="exibirSenha()" />
+        <label for="exibir_senha">Exibir senha</label>
+      </div>
+
+      <button class="button_login" type="submit">Entrar</button>
+
+      <p>Ainda não tem Conta ? <a href="../sobre.html">Crie agora</a></p>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
